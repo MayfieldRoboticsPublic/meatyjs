@@ -10,7 +10,7 @@ module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    clean: ['dist/**'],
+    clean: ['dist/**', 'coverage'],
 
     copy: {
       dist: {
@@ -22,10 +22,12 @@ module.exports = function (grunt) {
     },
 
     coveralls: {
-     options: {
-       src: 'coverage/**/lcov.info',
-       force: false
-     }
+      options: {
+        force: false
+      },
+      unit: {
+        src: 'coverage/*/lcov.info'
+      }
    },
 
     jshint: {
