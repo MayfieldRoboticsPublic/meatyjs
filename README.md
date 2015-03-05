@@ -27,15 +27,21 @@ assert(mediaType.format() === "application/vnd.mayfield.msg.v1+json; chunksize=5
 # dev
 
 ```bash
-$ git clone git@github.com:mayfieldrobotics/meaty.js.git
-$ cd meaty.js
+$ git clone git@github.com:mayfieldrobotics/meatyjs.git
+$ cd meatyjs
 $ npm install
 $ grunt build test
 ```
 
 # release
 
-Update `{version}` in:
+All is well:
+
+```bash
+$ grunt clean build test
+```
+
+so update `{version}` in:
 
 * `package.json`
 * `bower.json`
