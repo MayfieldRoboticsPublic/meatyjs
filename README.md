@@ -49,7 +49,7 @@ so update `{version}` in:
 then:
 
 ``` bash
-$ git add package.json bower.json
+$ git -am "release v{version}"
 $ git tag -a v{version} -m "release v{version}"
 $ git push --tags
 ```
