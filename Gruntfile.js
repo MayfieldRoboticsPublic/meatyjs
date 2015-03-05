@@ -4,6 +4,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-coveralls');
   grunt.loadNpmTasks('grunt-karma');
 
   grunt.initConfig({
@@ -20,6 +21,13 @@ module.exports = function (grunt) {
       }
     },
 
+    coveralls: {
+     options: {
+       src: 'coverage/**/lcov.info',
+       force: false
+     }
+   },
+
     jshint: {
       build: ['Gruntfile.js'],
       src: ['meaty.js', 'meaty_test.js'],
@@ -30,7 +38,11 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'karma.conf.js',
         singleRun: true,
-        browsers: ['PhantomJS']
+        browsers: ['PhantomJS'],
+        coverageReporter: {
+          type : 'lcov',
+          dir : 'coverage/'
+        }
       }
     },
 
