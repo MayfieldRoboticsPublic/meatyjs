@@ -1,4 +1,4 @@
-# meatyjs [![Build Status](https://travis-ci.org/mayfieldrobotics/meatyjs.svg)](https://travis-ci.org/mayfieldrobotics/meatyjs)
+# meatyjs [![Build Status](https://travis-ci.org/mayfieldrobotics/meatyjs.svg)](https://travis-ci.org/mayfieldrobotics/meatyjs) [![Coverage Status](https://coveralls.io/repos/mayfieldrobotics/meatyjs/badge.svg?branch=master)](https://coveralls.io/r/mayfieldrobotics/meatyjs?branch=master)
 
 Simple [media type](https://tools.ietf.org/html/rfc6838) parsing and formatting. Based on work by:
 
@@ -35,22 +35,16 @@ $ grunt build test
 
 # release
 
-Updates version in:
+Update `{version}` in:
 
 * `package.json`
 * `bower.json`
 
-commit those:
-
-```bash
-$ git add package.json bower.json
-$ git commit -m "{version}"
-```
-
-tag the commit:
+then:
 
 ``` bash
-$ git tag "{version}"
+$ git add package.json bower.json
+$ git tag -a v{version} -m "release v{version}"
 $ git push --tags
 ```
 
