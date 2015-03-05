@@ -1,0 +1,19 @@
+{
+  "name": "meatyjs",
+  "description": "Parse and stringify media types.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mayfieldrobotics/meatyjs",
+  "author": {
+    "name": "Mayfield Robotics",
+    "email": "dev@mayfieldrobotics.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mayfieldrobotics/meatyjs.git"
+  },
+  "licenses": [{
+    "type": "MIT",
+    "url": "http://opensource.org/licenses/MIT"
+  }],
+  "main": "dist/meaty.min.js"
+}
