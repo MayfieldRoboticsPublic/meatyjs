@@ -1,4 +1,4 @@
-# meatyjs
+# meatyjs [![Build Status](https://travis-ci.org/mayfieldrobotics/meatyjs.svg)](https://travis-ci.org/mayfieldrobotics/meatyjs)
 
 Simple [media type](https://tools.ietf.org/html/rfc6838) parsing and formatting. Based on work by:
 
